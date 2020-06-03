@@ -411,7 +411,7 @@ namespace EnIPExplorer
             UInt16 attributeId;
             try
             {
-                UInt16.TryParse(cb_class.Text, out attributeId);
+                UInt16.TryParse(tb_attribute.Text, out attributeId);
             }
             catch
             {
@@ -426,7 +426,7 @@ namespace EnIPExplorer
             if (tb_attribute.Text.Equals(""))
                 return null; // dont use attributeID
             UInt16 attributeId;
-            if(!(UInt16.TryParse(cb_class.Text, out attributeId)))
+            if(!(UInt16.TryParse(tb_attribute.Text, out attributeId)))
             {
                 tb_attribute.Text = "";
                 return null;
